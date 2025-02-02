@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects" id="projects-link">Projects & Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="home-container">
+            <div class="home-image">
+                <img src="Image1.jpg" alt="Your Image">
+            </div>
+            <div class="home-text">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Hello! I'm a <span class="highlight">Programmer</span> passionate about <span class="highlight">Bringing my imagination to life through programming and art</span>.</p>
+                <p>My name is Jasper B. Ajias, an artist and a programmer.</p>
+                <button onclick="showProjects()">View Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h1>My Web Development Skills</h1>
+        <p>This portfolio demonstrates my skills in HTML, CSS, and JavaScript as a Computer Science student. It showcases:</p>
+        <ul>
+            <li>Structured HTML for well-organized content.</li>
+            <li>Modern CSS techniques for responsive design.</li>
+            <li>JavaScript for interactive elements.</li>
+        </ul>
+    </section>
+
+    <section id="projects" class="hidden">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>ChariTree</h3>
+            <p>ChariTree is an interactive application for donations, effectively improving the user interactivity and enjoyment in donating through showing a gamified style.</p>
+        </div>
+        <div class="project">
+            <h3>MaPuark</h3>
+            <p>An application for parking and school layouts that has a tracking system for admins and a UI where the users can see the layout of the place and the available parking spaces.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Email: jajias@mcm.edu.ph</p>
+        <p>LinkedIn: <a href="#">My Profile</a></p>
+    </section>
+
+    <footer>
+        <p>© 2024 My Portfolio</p>
+    </footer>
+</body>
+</html>
