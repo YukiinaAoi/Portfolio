@@ -8,61 +8,95 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects" id="projects-link">Projects & Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
 
-    <section id="home">
-        <div class="home-container">
-            <div class="home-image">
-                <img src="Image1.jpg" alt="Your Image">
+    <!-- Background Container (Same for All Sections) -->
+    <div id="background"></div>
+
+    <!-- Landing Page -->
+    <div id="landing-page">
+        <div class="overlay">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Discover my skills, projects, and creativity.</p>
+            <button onclick="enterPortfolio()">Enter Portfolio</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content">
+        <header>
+            <nav>
+                <ul>
+                    <li><button onclick="showSection('home')">Home</button></li>
+                    <li><button onclick="showSection('skills')">Skills</button></li>
+                    <li><button onclick="showSection('projects')">Projects</button></li>
+                    <li><button onclick="showSection('contact')">Contact</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+            <div class="intro-container">
+                <img src="Image1.jpg" alt="Jasper B. Ajias" class="profile-pic">
+                <p>Hi, I'm <strong>Jasper B. Ajias</strong>, a passionate Computer Science student. I love bringing my imagination to life through both arts and programming. Whether it's crafting elegant code or designing visually captivating projects, I'm always looking for creative ways to solve problems and build something meaningful. In my spare time, I enjoy playing the piano, letting my creativity flow through music.</p>
             </div>
-            <div class="home-text">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Hello! I'm a <span class="highlight">Programmer</span> passionate about <span class="highlight">Bringing my imagination to life through programming and art</span>.</p>
-                <p>My name is Jasper B. Ajias, an artist and a programmer.</p>
-                <button onclick="showProjects()">View Projects</button>
+        </section>
+        
+        <section id="skills" class="hidden">
+            <h2>My Skills</h2>
+            <div class="skills-container">
+                <div class="skill">
+                    <h3>Web Development</h3>
+                    <p>My portfolio is built using <strong>HTML, CSS, and JavaScript</strong>, demonstrating my ability to create interactive and visually appealing websites. Every section is designed with structured, semantic HTML, ensuring accessibility and readability.</p>
+                </div>
+                <div class="skill">
+                    <h3>Creative UI/UX Design</h3>
+                    <p>I blend functionality with aesthetics by using **modern CSS techniques** like flexbox, grid, and animations. The layout is clean, user-friendly, and responsive, ensuring a seamless experience across all devices.</p>
+                </div>
+                <div class="skill">
+                    <h3>Interactive Features</h3>
+                    <p>JavaScript powers the interactive elements in my portfolio. From smooth transitions to dynamic content switching, my portfolio showcases how I use JavaScript to enhance user engagement.</p>
+                </div>
+                <div class="skill">
+                    <h3>Problem-Solving & Creativity</h3>
+                    <p>As a Computer Science student, I approach web development with a "problem-solving mindset". Every feature in this portfolio reflects my ability to "code efficiently, debug effectively, and design intuitively".</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+        
 
-    <section id="skills">
-        <h1>My Web Development Skills</h1>
-        <p>This portfolio demonstrates my skills in HTML, CSS, and JavaScript as a Computer Science student. It showcases:</p>
-        <ul>
-            <li>Structured HTML for well-organized content.</li>
-            <li>Modern CSS techniques for responsive design.</li>
-            <li>JavaScript for interactive elements.</li>
-        </ul>
-    </section>
+        <section id="projects" class="hidden">
+            <h2>Projects</h2>
+            <div class="projects-container">
+                <div class="project">
+                    <img src="project1.png" alt="Project 1" class="project-img">
+                    <h3>ChariTree</h3>
+                    <p>An Overhaul of the classic donation boxes normally seen anywhere, this app adds a gamified feel effectively increasing user participation and engagement to the boring old donation boxes. </p>
+                </div>
+                <div class="project">
+                    <img src="project2.jpg" alt="Project 2" class="project-img">
+                    <h3>MaPaurk</h3>
+                    <p>A smart Parking application where admins can see the vehicles that enter the institution and the people who own the vehicle. The users can also see the available parking spaces in the institution.</p>
+                </div>
+                <div class="project">
+                    <img src="project3.png" alt="Project 3" class="project-img">
+                    <h3>M.A.R.I.</h3>
+                    <p>Marker Artistry and Rendering Interface. A portable solution to create, render, and share digital artwork with the precision and creativity of traditional markers, all within a sleek and intuitive user interface.</p>
+                </div>
+            </div>
+        </section>
+        
 
-    <section id="projects" class="hidden">
-        <h2>My Projects</h2>
-        <div class="project">
-            <h3>ChariTree</h3>
-            <p>ChariTree is an interactive application for donations, effectively improving the user interactivity and enjoyment in donating through showing a gamified style.</p>
-        </div>
-        <div class="project">
-            <h3>MaPuark</h3>
-            <p>An application for parking and school layouts that has a tracking system for admins and a UI where the users can see the layout of the place and the available parking spaces.</p>
-        </div>
-    </section>
+        <section id="contact" class="hidden">
+            <h2>Contact Me</h2>
+            <p>Email: jajias@mcm.edu.ph</p>
+            <p>Instagram: @yukiinaaoi</p>
+        </section>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: jajias@mcm.edu.ph</p>
-        <p>LinkedIn: <a href="#">My Profile</a></p>
-    </section>
+        <footer>
+            <p>© 2024 My Portfolio</p>
+        </footer>
+    </div>
 
-    <footer>
-        <p>© 2024 My Portfolio</p>
-    </footer>
 </body>
 </html>
