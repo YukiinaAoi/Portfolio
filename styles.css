@@ -126,6 +126,26 @@ html, body {
     color: #1abc9c; /* Highlight name with matching accent color */
 }
 
+.more-projects-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    background: #1abc9c;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.more-projects-btn:hover {
+    background-color: #16a085;
+    transform: scale(1.1);
+}
+
 .skills-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
